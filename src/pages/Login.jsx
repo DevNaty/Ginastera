@@ -14,7 +14,7 @@ export default function Login() {
       console.log(response.data)
       localStorage.setItem('token', response.data.token)
       localStorage.setItem('nombre', response.data.usuario.nombre)
-      navigate('/')
+      navigate('/') // redirige a la página de nuevo usuario
     } catch (err) {
       alert('Credenciales incorrectas')
       console.error('Error al iniciar sesión:', err.response?.data || err.message)

@@ -1,91 +1,4 @@
-/*import { useState } from 'react'
-import API from '../services/api'
-import { useNavigate } from 'react-router-dom'
 
-export default function Register() {
-  const [form, setForm] = useState({
-    nombre: '',
-    apellido: '',
-    telefono: '',
-    dni: '',
-    email: '',
-    password: ''
-  })
-  const navigate = useNavigate()
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
-
-  const handleRegister = async (e) => {
-    e.preventDefault()
-    try {
-      await API.post('/usuarios', form)
-      alert('Usuario registrado con éxito')
-      navigate('/login')
-    } catch (err) {
-      alert('Error al registrar usuario')
-    }
-  }
-
-  return (
-    <div className="max-w-md mx-auto mt-10 p-4 shadow rounded bg-white">
-      <h2 className="text-2xl mb-4">Crear cuenta</h2>
-      <form onSubmit={handleRegister}>
-        <input
-          type="text"
-          name="Nombre"
-          placeholder="Nombre"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <input
-          type="text"
-          name="Apellido"
-          placeholder="Apellido"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <input
-          type="text"
-          name="Telefono"
-          placeholder="Teléfono"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <input
-          type="text"
-          name="Dni"
-          placeholder="DNI"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <input
-          type="email"
-          name="Email"
-          placeholder="Email"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <input
-          type="password"
-          name="Password"
-          placeholder="Contraseña"
-          onChange={handleChange}
-          className="block w-full mb-3 p-2 border rounded"
-          required
-        />
-        <button className="bg-green-500 text-white px-4 py-2 rounded">Registrarse</button>
-      </form>
-    </div>
-  )
-}
-*/
 import { useState, useEffect } from 'react'
 import API from '../services/api'
 import { useNavigate } from 'react-router-dom'
@@ -152,7 +65,7 @@ export default function Register() {
         <input type="text" name="Dni" placeholder="DNI" onChange={handleChange} className="block w-full mb-3 p-2 border rounded" required />
         <input type="email" name="Email" placeholder="Email" onChange={handleChange} className="block w-full mb-3 p-2 border rounded" required />
         <input type="password" name="Password" placeholder="Contraseña" onChange={handleChange} className="block w-full mb-3 p-2 border rounded" required />
-
+{/* 
         <div className="mb-4">
           <label className="block mb-2 font-semibold">Categorías:</label>
           {categorias.map((cat) => (
@@ -167,7 +80,7 @@ export default function Register() {
               {cat.Descripcion}
             </label>
           ))}
-        </div>
+        </div> */}
 
         <button className="bg-green-500 text-white px-4 py-2 rounded">Registrarse</button>
       </form>
