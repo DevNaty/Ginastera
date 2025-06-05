@@ -4,20 +4,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from'./pages/Home'
-import Clientes from './pages/Usuarios'
-import NuevoCliente from './pages/NuevoUsuario'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import Usuarios from './pages/Usuarios'
-import NuevoUsuario from './pages/NuevoUsuario'
+import AsignarCat from './pages/AsignarCategorias'
+import GestionAlumnos from './pages/GestionAlumnos'
 
 function App() {
   return (
    
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/usuarios" element={<Usuarios />} />
-        <Route path="/nuevo-usuario" element={<NuevoUsuario />} />
+        <Route path="/gestionarAlumnos" element={<GestionAlumnos />} />
+        <Route path="/asignarCategorias" element={<AsignarCat />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         
