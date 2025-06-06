@@ -115,7 +115,7 @@ export default function AsignarCategorias() {
               <option value="">Seleccionar categoría</option>
               {categorias.map((cat) => (
                 <option key={cat.ID_Categoria} value={cat.ID_Categoria}>
-                  {cat.NombreCategoria}
+                  {cat.Descripcion}
                 </option>
               ))}
             </select>
@@ -140,7 +140,7 @@ export default function AsignarCategorias() {
                 {categoriasAsignadas.map((cat) => (
                   <tr key={cat.ID_Categoria}>
                     <td className="border px-4 py-2">{cat.ID_Categoria}</td>
-                    <td className="border px-4 py-2">{cat.NombreCategoria}</td>
+                    <td className="border px-4 py-2">{cat.Descripcion}</td>
                   </tr>
                 ))}
               </tbody>
