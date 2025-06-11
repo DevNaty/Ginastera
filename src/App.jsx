@@ -7,14 +7,15 @@ import Home from'./pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import AsignarCat from './pages/AsignarCategorias'
-import GestionAlumnos from './pages/GestionAlumnos'
+import ABMCategorias from './pages/ABM-Categorias'
+
 
 function App() {
   return (
    
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/gestionarAlumnos" element={<GestionAlumnos />} />
+        <Route path="/abmCategorias" element={<ABMCategorias />} />
         <Route path="/asignarCategorias" element={<AsignarCat />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

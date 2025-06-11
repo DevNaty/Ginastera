@@ -17,8 +17,8 @@ export default function Home() {
       </main>
 
       <main className="text-center mt-12">
-        <Button onClick={() => navigate('/gestionarAlumnos')}>
-          Gestionar Alumnos
+        <Button onClick={() => navigate('/abmCategorias')}>
+          ABM Categorias
         </Button>
       </main>
     </div>
