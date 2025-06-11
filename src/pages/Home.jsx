@@ -8,19 +8,10 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className="text-center mt-12">
+       
         <h2 className="text-3xl font-bold mb-4">¡Te da la bienvenida!</h2>
-
-        <Button onClick={() => navigate('/asignarCategorias')}>
-          Asignar Categorías
-        </Button>
-      </main>
-
-      <main className="text-center mt-12">
-        <Button onClick={() => navigate('/abmCategorias')}>
-          ABM Categorias
-        </Button>
-      </main>
+    
+     
 
        <main className="text-center mt-12">
         <Button onClick={() => navigate('/ciclos')}>
@@ -31,6 +22,20 @@ export default function Home() {
       <main className="text-center mt-12">
         <Button onClick={() => navigate('/formaciones')}>
           ABM Formaciones
+        </Button>
+      </main>
+
+
+       <main className="text-center mt-12">
+        <Button onClick={() => navigate('/abmCategorias')}>
+          ABM Categorias
+        </Button>
+      </main>
+
+       
+      <main className="text-center mt-12">
+        <Button onClick={() => navigate('/asignarCategorias')}>
+          Asignar Categorías
         </Button>
       </main>
     </div>
