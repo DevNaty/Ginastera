@@ -27,6 +27,12 @@ export default function Home() {
           ABM Ciclos
         </Button>
       </main>
+
+      <main className="text-center mt-12">
+        <Button onClick={() => navigate('/formaciones')}>
+          ABM Formaciones
+        </Button>
+      </main>
     </div>
   )
 }

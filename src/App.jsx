@@ -9,6 +9,7 @@ import Register from './pages/Register'
 import AsignarCat from './pages/AsignarCategorias'
 import ABMCategorias from './pages/ABM-Categorias'
 import Ciclos from './pages/Ciclos';
+import Formaciones from './pages/Formaciones';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/abmCategorias" element={<ABMCategorias />} />
         <Route path="/asignarCategorias" element={<AsignarCat />} />
-         <Route path="/ciclos" element={<Ciclos />} />
+        <Route path="/ciclos" element={<Ciclos />} />
+        <Route path="/formaciones" element={<Formaciones />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         
