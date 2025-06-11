@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import AsignarCat from './pages/AsignarCategorias'
 import ABMCategorias from './pages/ABM-Categorias'
+import Ciclos from './pages/Ciclos';
 
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/abmCategorias" element={<ABMCategorias />} />
         <Route path="/asignarCategorias" element={<AsignarCat />} />
+         <Route path="/ciclos" element={<Ciclos />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        
         
       </Routes>
     

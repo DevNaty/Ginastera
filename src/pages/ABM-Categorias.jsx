@@ -111,14 +111,17 @@ const ABMCategorias = () => {
           {editandoCategoria ? 'Editar Categoría' : 'Agregar Nueva Categoría'}
         </h2>
         <div className="mb-4">
-          
+          {/* Label de la descripción de la categoría - Restaurado */}
+          <label htmlFor="descripcion" className="block text-gray-700 text-sm font-bold mb-2">
+            Descripción de la Categoría:
+          </label>
           <input
             type="text"
             id="descripcion"
             value={descripcion}
             onChange={handleChangeDescripcion}
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            placeholder="Ej: Administrador, Director, Alumno..."
+            placeholder="Ej: Electrónica, Ropa, Hogar..."
             required
           />
         </div>
